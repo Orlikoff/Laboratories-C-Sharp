@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Lab_1
 {
@@ -148,6 +147,17 @@ namespace Lab_1
 
             if (unused == 0)
             {
+                if (checkWin('X', xCount, usedByX, winningCases, BOARD))
+                {
+                    return true;
+                };
+
+                if (checkWin('O', oCount, usedByO, winningCases, BOARD))
+                {
+                    return true;
+                };
+
+
                 draw(BOARD);
                 return true;
             }
@@ -169,7 +179,6 @@ namespace Lab_1
                         return true;
                     };
                 }
-
             }
             
             return false;
