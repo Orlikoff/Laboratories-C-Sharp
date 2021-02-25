@@ -28,7 +28,6 @@ namespace Lab_1
                 {2, 4, 6 }  // diagonal
             };
 
-
             //Main game cycle with all implemented fucntions
             welcome();
             Console.ReadKey();
@@ -98,8 +97,7 @@ namespace Lab_1
                 {
                     //without showing it to the user
                 }
-                
-              
+                             
                 for(int i = 0; i < countVars; i++)
                 {
                     if (vars[i] == input)
@@ -144,7 +142,6 @@ namespace Lab_1
                 }
             }
 
-
             if (unused == 0)
             {
                 if (checkWin('X', xCount, usedByX, winningCases, BOARD))
@@ -156,7 +153,6 @@ namespace Lab_1
                 {
                     return true;
                 };
-
 
                 draw(BOARD);
                 return true;
