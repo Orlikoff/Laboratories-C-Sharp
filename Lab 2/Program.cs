@@ -206,11 +206,45 @@ namespace Lab_2
             Console.ForegroundColor = ConsoleColor.Magenta;
             Random randomiser = new Random();
 
-            for (int i = 0; i < 30; i++)
-            {
-                Console.Write(dataString[randomiser.Next(0, 256)] + " ");
-            }
-            Console.Write("\n");
+            int baseNumber = randomiser.Next(100000000, 999999999);
+            int n1 = baseNumber / 100000000;
+            Console.Write($"{dataString[n1 % 255]} ");
+            int n2 = (baseNumber / 10000000) % 10;
+            Console.Write($"{dataString[n2 % 255]} ");
+            int n3 = (baseNumber / 1000000) % 100;
+            Console.Write($"{dataString[n3 % 255]} ");
+            int n4 = (baseNumber / 100000) % 1000;
+            Console.Write($"{dataString[n4 % 255]} ");
+            int n5 = (baseNumber / 10000) % 10000;
+            Console.Write($"{dataString[n5 % 255]} ");
+            int n6 = (baseNumber / 1000) % 100000;
+            Console.Write($"{dataString[n6 % 255]} ");
+            int n7 = (baseNumber / 100) % 1000000;
+            Console.Write($"{dataString[n7 % 255]} ");
+            int n8 = (baseNumber / 10) % 10000000;
+            Console.Write($"{dataString[n8 % 255]} ");
+            int n9 = baseNumber % 10000000;
+            Console.Write($"{dataString[n9 % 255]} ");
+            Console.Write($"{dataString[(n1 + n2) % 255]} ");
+            Console.Write($"{dataString[(n1 + n3) % 255]} ");
+            Console.Write($"{dataString[(n1 + n4) % 255]} ");
+            Console.Write($"{dataString[(n1 + n5) % 255]} ");
+            Console.Write($"{dataString[(n1 + n6) % 255]} ");
+            Console.Write($"{dataString[(n1 + n7) % 255]} ");
+            Console.Write($"{dataString[(n1 + n8) % 255]} ");
+            Console.Write($"{dataString[(n1 + n9) % 255]} ");
+            Console.Write($"{dataString[(n2 * n7) % 255]} ");
+            Console.Write($"{dataString[(n1 * n1) % 255]} ");
+            Console.Write($"{dataString[(n1 * n4) % 255]} ");
+            Console.Write($"{dataString[(n1 * n2) % 255]} ");
+            Console.Write($"{dataString[(n1 * n6 * n3) % 255]} ");
+            Console.Write($"{dataString[(n1 * n7) % 255]} ");
+            Console.Write($"{dataString[(n1 * n8) % 255]} ");
+            Console.Write($"{dataString[(n1 * n9) % 255]} ");
+            Console.Write($"{dataString[(n2 * n8) % 255]} ");
+            Console.Write($"{dataString[(n2 * n8) % 255]} ");
+            Console.Write($"{dataString[(n2 * n4) % 255]} ");
+            Console.Write($"{dataString[(n5 * n5) % 255]} ");
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n---End of task with Random objects---\n");

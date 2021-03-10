@@ -5,7 +5,7 @@ namespace Lab_1
     class Program // tic tac toe
     {
         static void Main(string[] args)
-        {
+        { 
             // initializing the board
             char[] BOARD = new char[9];
             for (int i = 0; i < BOARD.Length; i++)
