@@ -241,7 +241,7 @@ namespace Lab_2
             Console.Write($"{dataString[(n1 * n7) % 255]} ");
             Console.Write($"{dataString[(n1 * n8) % 255]} ");
             Console.Write($"{dataString[(n1 * n9) % 255]} ");
-            Console.Write($"{dataString[(n2 * n8) % 255]} ");
+            Console.Write($"{dataString[(n3 * n8) % 255]} ");
             Console.Write($"{dataString[(n2 * n8) % 255]} ");
             Console.Write($"{dataString[(n2 * n4) % 255]} ");
             Console.Write($"{dataString[(n5 * n5) % 255]} ");
