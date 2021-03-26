@@ -237,8 +237,6 @@ namespace Lab_3
     // Start of Model Class
     class Model : Processor
     {
-        private bool Original = false;
-
         private string _manufacturer;
         private string Manufacturer
         {
@@ -271,22 +269,19 @@ namespace Lab_3
                 if (_manufacturer == "Intel" && value == "ip2021certof")
                 {
                     _verificationCode = value;
-                    Original = true;
                 }
                 else if (_manufacturer == "AMD" && value == "ap2021certof")
                 {
                     _verificationCode = value;
-                    Original = true;
                 }
                 else if (_manufacturer == "OrlikInc" && value == "op2021certof")
                 {
                     _verificationCode = value;
-                    Original = true;
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nSorry, but your device seems to be unregistered...");
+                    Console.WriteLine($"\nSorry, but your device (id: {SerialNumber}) seems to be unregistered...");
                     Console.WriteLine("Blocking processor...");
                     Console.WriteLine("Processor has been blocked, good luck");
                     Console.WriteLine("Do not use unregistered hardware in the future :3");
@@ -305,7 +300,10 @@ namespace Lab_3
 
         public void CheckData()
         {
-            Console.WriteLine("DATA IS CHECKED...");
+            if (!IsBlocked)
+            {
+                Console.WriteLine("\nDATA IS CHECKED...");
+            }
         }
     }
     // End of Model Class
@@ -320,6 +318,10 @@ namespace Lab_3
             New_Device.CheckWorkingAbility();
             New_Device.CheckData();
             New_Device.DisplayInformation();
+            Model New_Device2 = new Model("OrlikInc", "op2021certof", 8, 2021, 64);
+            New_Device2.CheckWorkingAbility();
+            New_Device2.CheckData();
+            New_Device2.DisplayInformation();
         }
     }
 }
