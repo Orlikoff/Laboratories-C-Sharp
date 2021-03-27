@@ -318,7 +318,7 @@ namespace Lab_3
             New_Device.CheckWorkingAbility();
             New_Device.CheckData();
             New_Device.DisplayInformation();
-            Model New_Device2 = new Model("OrlikInc", "op2021certof", 8, 2021, 64);
+            Model New_Device2 = new Model("OrlikInc", "ops2021certof", 8, 2021, 64);
             New_Device2.CheckWorkingAbility();
             New_Device2.CheckData();
             New_Device2.DisplayInformation();
