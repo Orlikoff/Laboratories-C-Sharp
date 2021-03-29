@@ -162,6 +162,20 @@ namespace Lab_3
             this.YearOfRelease = YearOfRelease;
         }
 
+        public Processor(int NumberOfCores, int NumOfBits)
+        {
+            this._OSBit = NumOfBits;
+            this.NumberOfCores = NumberOfCores;
+            this.YearOfRelease = 2021;
+        }
+
+        public Processor(int NumOfBits)
+        {
+            this._OSBit = NumOfBits;
+            this.NumberOfCores = 8;
+            this.YearOfRelease = 2021;
+        }
+
         public void DisplayInformation()
         {
             if (DataIsvalid && !IsBlocked)
@@ -237,6 +251,8 @@ namespace Lab_3
     // Start of Model Class
     class Model : Processor
     {
+        private string[] _info;
+
         private string _manufacturer;
         private string Manufacturer
         {
@@ -291,11 +307,51 @@ namespace Lab_3
             }
         }
 
-        public Model(string Manufacturer, string VerificationCode, int NumberOfCores, int YearOfRelease, int OsBit):
+        public Model(string Manufacturer, string VerificationCode, int NumberOfCores, int YearOfRelease, int OsBit, string[] ExtraInfo) :
             base(NumberOfCores, YearOfRelease, OsBit)
         {
             this.Manufacturer = Manufacturer;
             this.VerificationCode = VerificationCode;
+            _info = ExtraInfo;
+        }
+
+        public Model(string Manufacturer, string VerificationCode, int NumberOfCores, int OsBit, string[] ExtraInfo) :
+            base(NumberOfCores, OsBit)
+        {
+            this.Manufacturer = Manufacturer;
+            this.VerificationCode = VerificationCode;
+            _info = ExtraInfo;
+        }
+
+        public Model(string Manufacturer, string VerificationCode, int OsBit, string[] ExtraInfo) :
+            base(OsBit)
+        {
+            this.Manufacturer = Manufacturer;
+            this.VerificationCode = VerificationCode;
+            _info = ExtraInfo;
+        }
+
+        public string this[int index]
+        {
+            get
+            {
+                return _info[index];
+            }
+            set
+            {
+                _info[index] = value;
+            }
+        }
+
+        public void DisplayProps()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"Props for the processor under id: {SerialNumber}");
+            for (int i = 0; i < _info.Length; i++)
+            {
+                Console.WriteLine("-" + _info[i]);
+            }
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
         public void CheckData()
@@ -314,14 +370,18 @@ namespace Lab_3
     {
         static void Main(string[] args)
         {
-            Model New_Device = new Model("Intel", "ip2021certof", 8, 2021, 64);
+            string[] Props_1 = { "Good Processor", "Quality hardware" };
+            Model New_Device = new Model("Intel", "ip2021certof", 8, 2021, 64, Props_1);
             New_Device.CheckWorkingAbility();
             New_Device.CheckData();
             New_Device.DisplayInformation();
-            Model New_Device2 = new Model("OrlikInc", "ops2021certof", 8, 2021, 64);
+            string[] Props_2 = { "Nice build", "New Brand" };
+            Model New_Device2 = new Model("OrlikInc", "op2021certof", 64, Props_2);
             New_Device2.CheckWorkingAbility();
             New_Device2.CheckData();
             New_Device2.DisplayInformation();
+            New_Device.DisplayProps();
+            New_Device2.DisplayProps();
         }
     }
 }
