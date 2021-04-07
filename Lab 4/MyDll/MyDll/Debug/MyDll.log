@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  dllmain.cpp
+  MyDll.cpp
+C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\MyDll\MyDll.cpp(11,16): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\MyDll\MyDll.cpp(15,15): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\MyDll\MyDll.cpp(19,30): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\MyDll\MyDll.cpp(27,30): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
+     Создается библиотека C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\Debug\MyDll.lib и объект C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\Debug\MyDll.exp
+  MyDll.vcxproj -> C:\Users\Orlik\Desktop\C#\Lab 4\MyDll\Debug\MyDll.dll

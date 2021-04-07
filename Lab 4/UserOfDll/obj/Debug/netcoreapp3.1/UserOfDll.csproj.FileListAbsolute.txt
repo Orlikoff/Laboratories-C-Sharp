@@ -1,0 +1,12 @@
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\bin\Debug\netcoreapp3.1\UserOfDll.exe
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\bin\Debug\netcoreapp3.1\UserOfDll.deps.json
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\bin\Debug\netcoreapp3.1\UserOfDll.runtimeconfig.json
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\bin\Debug\netcoreapp3.1\UserOfDll.runtimeconfig.dev.json
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\bin\Debug\netcoreapp3.1\UserOfDll.dll
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\bin\Debug\netcoreapp3.1\UserOfDll.pdb
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\obj\Debug\netcoreapp3.1\UserOfDll.AssemblyInfoInputs.cache
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\obj\Debug\netcoreapp3.1\UserOfDll.AssemblyInfo.cs
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\obj\Debug\netcoreapp3.1\UserOfDll.csproj.CoreCompileInputs.cache
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\obj\Debug\netcoreapp3.1\UserOfDll.dll
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\obj\Debug\netcoreapp3.1\UserOfDll.pdb
+C:\Users\Orlik\Desktop\C#\Lab 4\UserOfDll\obj\Debug\netcoreapp3.1\UserOfDll.genruntimeconfig.cache
