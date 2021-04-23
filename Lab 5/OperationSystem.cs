@@ -9,7 +9,7 @@ namespace Lab_5
     {
         public string Title { get; private set; }
         public string CompanyName { get; private set; }
-        static public List<Process> Processes = new List<Process>();
+        public List<Process> Processes = new List<Process>();
 
         private bool AVLever = false;
 
