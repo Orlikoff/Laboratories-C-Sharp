@@ -65,9 +65,18 @@ namespace Lab_6
             DEVICES[2].GenerateProcess("Google", "Check the connection reliability");
             DEVICES[2].GenerateProcess("WARN", "BAD CONNECTION");
             DEVICES[2].ListProcesses();
-            DEVICES[0].DestroySelf();
-            DEVICES[1].DestroySelf();
-            DEVICES[2].DestroySelf();
+
+            // List Of IDestroyable
+            List<IDestroyable> TO_DESTROY = new List<IDestroyable>();
+            TO_DESTROY.Add(Comp);
+            TO_DESTROY.Add(SComp);
+            TO_DESTROY.Add(MComp);
+
+            for (int i = 0; i < 3; i++)
+            {
+                TO_DESTROY[i].DestroySelf();
+            }
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"{DEVICES[0]}");
             Console.WriteLine($"{DEVICES[1]}");

@@ -15,7 +15,6 @@ namespace Lab_6
 
         public int CompareTo(OperationSystem o)
         {
-
             return this.yearOfRelease.CompareTo(o.yearOfRelease);
         }
 
