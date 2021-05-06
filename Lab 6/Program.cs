@@ -72,7 +72,7 @@ namespace Lab_6
             TO_DESTROY.Add(SComp);
             TO_DESTROY.Add(MComp);
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < TO_DESTROY.Count; i++)
             {
                 TO_DESTROY[i].DestroySelf();
             }
