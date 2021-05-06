@@ -11,7 +11,7 @@ namespace Lab_6
 
         override public string ToString(string format, IFormatProvider formatProvider)
         {
-            return $"The device with id({this.SerialNumber}) and system {this.CurrentOS}";
+            return $"The device with id({this.SerialNumber}) and system {this.CurrentOS}, type: Computer";
         }
 
         override public void DestroySelf()

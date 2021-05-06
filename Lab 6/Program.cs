@@ -45,6 +45,7 @@ namespace Lab_6
             DEVICES.Add(Comp);
             DEVICES.Add(SComp);
             DEVICES.Add(MComp);
+            DEVICES.Sort();
             for (int i = 0; i < DEVICES.Count; i++)
             {
                 DEVICES[i].CheckData();
@@ -68,7 +69,9 @@ namespace Lab_6
             DEVICES[1].DestroySelf();
             DEVICES[2].DestroySelf();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"The device is {DEVICES[2]}");
+            Console.WriteLine($"{DEVICES[0]}");
+            Console.WriteLine($"{DEVICES[1]}");
+            Console.WriteLine($"{DEVICES[2]}");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
     }

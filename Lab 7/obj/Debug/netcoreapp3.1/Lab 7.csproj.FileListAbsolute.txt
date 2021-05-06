@@ -1,0 +1,13 @@
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.csprojAssemblyReference.cache
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.AssemblyInfoInputs.cache
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.AssemblyInfo.cs
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.csproj.CoreCompileInputs.cache
+C:\Users\Orlik\Desktop\C#\Lab 7\bin\Debug\netcoreapp3.1\Lab 7.exe
+C:\Users\Orlik\Desktop\C#\Lab 7\bin\Debug\netcoreapp3.1\Lab 7.deps.json
+C:\Users\Orlik\Desktop\C#\Lab 7\bin\Debug\netcoreapp3.1\Lab 7.runtimeconfig.json
+C:\Users\Orlik\Desktop\C#\Lab 7\bin\Debug\netcoreapp3.1\Lab 7.runtimeconfig.dev.json
+C:\Users\Orlik\Desktop\C#\Lab 7\bin\Debug\netcoreapp3.1\Lab 7.dll
+C:\Users\Orlik\Desktop\C#\Lab 7\bin\Debug\netcoreapp3.1\Lab 7.pdb
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.dll
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.pdb
+C:\Users\Orlik\Desktop\C#\Lab 7\obj\Debug\netcoreapp3.1\Lab 7.genruntimeconfig.cache
