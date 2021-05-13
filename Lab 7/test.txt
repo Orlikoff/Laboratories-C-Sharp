@@ -1,0 +1,35 @@
+List<OperationSystem> DEVICES = new List<OperationSystem>();
+
+            // User Input Handling
+            // Welcoming user and giving him instructions
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("------------Computer Conveyor Version 1.0------------");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            string instructions = "1 - Add new Device\n" +
+                                  "2 - Show All the devices\n" +
+                                  "3 - Show Verification Codes And Companies\n" +
+                                  "4 - Exit\n" +
+                                  "Your choice: ";
+            char input = '1';
+            while (input != '4')
+            {
+                Console.Write(instructions);
+                input = (char)Console.Read();
+                Console.WriteLine(input);
+
+                switch (input)
+                {
+                    case '1':
+                        {
+
+                            break;
+                        }
+                    case '2':
+                        {
+                            break;
+                        }
+                    case '3':
+                        {
+                            break;
+                        }
+                }
