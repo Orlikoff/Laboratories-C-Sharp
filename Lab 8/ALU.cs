@@ -12,9 +12,21 @@ namespace Lab_8
         protected string SerialNumber { get; }
         protected bool IsBlocked = false;
 
+        public static event ActiveTask OnCreation;
+
         public string getSN()
         {
             return this.SerialNumber;
+        }
+
+        public static void RegisterTask(ActiveTask method)
+        {
+            OnCreation += method;
+        }
+
+        public static void UnRefgsterTask(ActiveTask method)
+        {
+            OnCreation -= method;
         }
 
         public void StartRegistration()
@@ -25,6 +37,7 @@ namespace Lab_8
         public ALU()
         {
             SerialNumber = GenerateSerialNumber();
+            OnCreation?.Invoke();
         }
 
         private string GenerateSerialNumber()

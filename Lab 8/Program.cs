@@ -51,7 +51,7 @@ namespace Lab_8
     // End of RegistrationProtocol class
 
 
-    // Start of Event to register the device
+    // Start of Event to register the device class
     class EventToRegister
     {
         public delegate void RegistrationService(string code);
@@ -62,18 +62,46 @@ namespace Lab_8
             RegisterDevice(code);
         }
     }
-    // End of Event to register the device
+    // End of Event to register the device class
 
+    // Public delegate for all the classes of namespace
+    public delegate void ActiveTask();
 
-    // Delegate for tasks
+    // Class for registering by ALU
+    class OnCreationMethods
+    {
+        static public void ConfirmCreation()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\t--- THE DEVICE HAS BEEN CREATED --- (Message by event)");
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
 
-    // Delegate for tasks
+        static public void ShipToDestination()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\t--- THE DEVICE HAS BEEN DELIVERED TO NEW YORK --- (Message by event)");
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
+        static public void TestDevice()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\t--- THE DEVICE HAS BEEN TESTED ACCORDING TO THE APPLE STANDARTS --- (Message by event)");
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+    }
 
     // Main Program
     class Program
     {
         static void Main(string[] args)
         {
+            // Registering methods for creation
+            ALU.RegisterTask(OnCreationMethods.ConfirmCreation);
+            ALU.RegisterTask(OnCreationMethods.ShipToDestination);
+            ALU.RegisterTask(OnCreationMethods.TestDevice);
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\n\t--- Creating devices ---");
             Console.ForegroundColor = ConsoleColor.Gray;
@@ -152,7 +180,7 @@ namespace Lab_8
             Console.ForegroundColor = ConsoleColor.Gray;
             DEVICES[1].TackleOSTask(delegate()
             {
-                Console.WriteLine("Collecting data!");
+                Console.WriteLine($"Collecting data!");
             });
         }
     }
